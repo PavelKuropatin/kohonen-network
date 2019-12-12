@@ -24,7 +24,7 @@ if __name__ == "__main__":
     network = KohonenNetwork(weights, data, learn_speed, learn_step)
     learning_data = data
 
-    network.learn(learning_data)
+    clusters = network.learn(learning_data)
 
-    print(network.clusters)
+    print(clusters)
     print(network.weights)
